@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signUpScreen">
+
+    <fragment
+        android:id="@+id/signUpScreen"
+        android:name="com.example.proyecto_emergencywiki.SignUpScreen"
+        android:label="fragment_sign_up_screen"
+        tools:layout="@layout/fragment_sign_up_screen" />
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.example.proyecto_emergencywiki.LoginScreen"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen" />
+    <fragment
+        android:id="@+id/userAccess"
+        android:name="com.example.proyecto_emergencywiki.UserAccess"
+        android:label="fragment_user_access"
+        tools:layout="@layout/fragment_user_access" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.proyecto_emergencywiki.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/eventInfoFragment"
+        android:name="com.example.proyecto_emergencywiki.EventInfoFragment"
+        android:label="fragment_event_info"
+        tools:layout="@layout/fragment_event_info" />
+    <fragment
+        android:id="@+id/postInfoFragment"
+        android:name="com.example.proyecto_emergencywiki.PostInfoFragment"
+        android:label="fragment_post_info"
+        tools:layout="@layout/fragment_post_info" />
+    <fragment
+        android:id="@+id/charactersFragment"
+        android:name="com.example.proyecto_emergencywiki.CharactersFragment"
+        android:label="fragment_characters"
+        tools:layout="@layout/fragment_characters" />
+    <fragment
+        android:id="@+id/characterInfoFragment"
+        android:name="com.example.proyecto_emergencywiki.CharacterInfoFragment"
+        android:label="fragment_character_info"
+        tools:layout="@layout/fragment_character_info" />
+    <fragment
+        android:id="@+id/weaponsFragment"
+        android:name="com.example.proyecto_emergencywiki.WeaponsFragment"
+        android:label="fragment_weapons"
+        tools:layout="@layout/fragment_weapons" />
+    <fragment
+        android:id="@+id/weaponInfoFragment"
+        android:name="com.example.proyecto_emergencywiki.WeaponInfoFragment"
+        android:label="fragment_weapon_info"
+        tools:layout="@layout/fragment_weapon_info" />
+    <fragment
+        android:id="@+id/artifactsFragment"
+        android:name="com.example.proyecto_emergencywiki.ArtifactsFragment"
+        android:label="fragment_artifacts"
+        tools:layout="@layout/fragment_artifacts" />
+    <fragment
+        android:id="@+id/artifactInfoFragment"
+        android:name="com.example.proyecto_emergencywiki.ArtifactInfoFragment"
+        android:label="fragment_artifact_info"
+        tools:layout="@layout/fragment_artifact_info" />
+    <fragment
+        android:id="@+id/teamUpFragment"
+        android:name="com.example.proyecto_emergencywiki.TeamUpFragment"
+        android:label="fragment_team_up"
+        tools:layout="@layout/fragment_team_up" />
+    <fragment
+        android:id="@+id/teamChatFragment"
+        android:name="com.example.proyecto_emergencywiki.TeamChatFragment"
+        android:label="fragment_team_chat"
+        tools:layout="@layout/fragment_team_chat" />
+    <fragment
+        android:id="@+id/userPerfilFragment"
+        android:name="com.example.proyecto_emergencywiki.UserPerfilFragment"
+        android:label="fragment_user_perfil"
+        tools:layout="@layout/fragment_user_perfil" />
+</navigation>
