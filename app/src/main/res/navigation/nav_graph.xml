@@ -3,23 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/signUpScreen">
+    app:startDestination="@id/userAccessFragment">
 
-    <fragment
-        android:id="@+id/signUpScreen"
-        android:name="com.example.proyecto_emergencywiki.SignUpScreen"
-        android:label="fragment_sign_up_screen"
-        tools:layout="@layout/fragment_sign_up_screen" />
-    <fragment
-        android:id="@+id/loginScreen"
-        android:name="com.example.proyecto_emergencywiki.LoginScreen"
-        android:label="fragment_login_screen"
-        tools:layout="@layout/fragment_login_screen" />
-    <fragment
-        android:id="@+id/userAccess"
-        android:name="com.example.proyecto_emergencywiki.UserAccess"
-        android:label="fragment_user_access"
-        tools:layout="@layout/fragment_user_access" />
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.proyecto_emergencywiki.HomeFragment"
@@ -80,4 +65,19 @@
         android:name="com.example.proyecto_emergencywiki.UserPerfilFragment"
         android:label="fragment_user_perfil"
         tools:layout="@layout/fragment_user_perfil" />
+    <fragment
+        android:id="@+id/userAccessFragment"
+        android:name="com.example.proyecto_emergencywiki.UserAccessFragment"
+        android:label="fragment_user_access2"
+        tools:layout="@layout/fragment_user_access" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.proyecto_emergencywiki.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.proyecto_emergencywiki.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
 </navigation>
