@@ -69,15 +69,36 @@
         android:id="@+id/userAccessFragment"
         android:name="com.example.proyecto_emergencywiki.UserAccessFragment"
         android:label="fragment_user_access2"
-        tools:layout="@layout/fragment_user_access" />
+        tools:layout="@layout/fragment_user_access" >
+        <action
+            android:id="@+id/action_userAccessFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_userAccessFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.example.proyecto_emergencywiki.SignUpFragment"
         android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" />
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_userAccessFragment"
+            app:destination="@id/userAccessFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.proyecto_emergencywiki.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_userAccessFragment"
+            app:destination="@id/userAccessFragment" />
+    </fragment>
 </navigation>

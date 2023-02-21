@@ -6,6 +6,8 @@
         <entry key="app/src/main/res/drawable/user_acces_button.xml" value="0.3005" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25181159420289856" />
         <entry key="app/src/main/res/layout/fragment_artifact_info.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.5" />
         <entry key="app/src/main/res/layout/fragment_sign_up_screen.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_user_access.xml" value="0.33" />
       </map>
