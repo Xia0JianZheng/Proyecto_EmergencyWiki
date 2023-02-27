@@ -15,9 +15,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
+
+import net.cachapa.expandablelayout.ExpandableLayout;
 
 
 public class HomeFragment extends Fragment {
@@ -44,6 +47,16 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
+        TextView expandableLayoutTextView = view.findViewById(R.id.eventMain);
+        ExpandableLayout expandableLayoutItems = view.findViewById(R.id.expandable_layout);
+
+        expandableLayoutTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // toggle the state of the ExpandableLayout
+                expandableLayoutItems.toggle();
+            }
+        });
     }
 
     private void initBottomNavigation() {
