@@ -17,8 +17,8 @@ import android.widget.TextView;
 public class SignUpFragment extends Fragment {
 
     NavController navController;
+
     TextView signUp;
-    TextView login;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -39,19 +39,12 @@ public class SignUpFragment extends Fragment {
         navController = Navigation.findNavController(view);
 
         signUp = view.findViewById(R.id.signUp);
-        login = view.findViewById(R.id.login);
+
 
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 navController.navigate(R.id.action_signUpFragment_to_homeFragment);
-            }
-        });
-
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.action_loginFragment_to_homeFragment);
             }
         });
     }

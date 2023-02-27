@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/xjz99/AndroidStudioProjects/Proyecto_EmergencyWiki/app/src/main/res/drawable/bottom_navigation_color_selector.xml" value="0.1" />
+        <entry key="..\:/Users/xjz99/AndroidStudioProjects/Proyecto_EmergencyWiki/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/xjz99/AndroidStudioProjects/Proyecto_EmergencyWiki/app/src/main/res/layout/fragment_login.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/xjz99/AndroidStudioProjects/Proyecto_EmergencyWiki/app/src/main/res/layout/fragment_sign_up.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/xjz99/AndroidStudioProjects/Proyecto_EmergencyWiki/app/src/main/res/layout/fragment_user_access.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/xjz99/AndroidStudioProjects/Proyecto_EmergencyWiki/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/user_acces_button.xml" value="0.3005" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25181159420289856" />
         <entry key="app/src/main/res/layout/fragment_artifact_info.xml" value="0.35625" />
