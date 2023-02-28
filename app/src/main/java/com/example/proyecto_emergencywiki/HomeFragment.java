@@ -15,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
@@ -49,6 +50,9 @@ public class HomeFragment extends Fragment {
         navController = Navigation.findNavController(view);
         TextView expandableLayoutTextView = view.findViewById(R.id.eventMain);
         ExpandableLayout expandableLayoutItems = view.findViewById(R.id.expandable_layout);
+        TextView eventButton = view.findViewById(R.id.event1);
+        LinearLayout post = view.findViewById(R.id.notice1);
+        ImageView userPerf= view.findViewById(R.id.user_perf);
 
         expandableLayoutTextView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +61,29 @@ public class HomeFragment extends Fragment {
                 expandableLayoutItems.toggle();
             }
         });
+
+        eventButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_homeFragment_to_eventInfoFragment);
+            }
+        });
+
+        post.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_homeFragment_to_postInfoFragment);
+            }
+        });
+
+        userPerf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_homeFragment_to_userPerfilFragment);
+            }
+        });
     }
+
 
     private void initBottomNavigation() {
         AHBottomNavigationItem homeItem = new AHBottomNavigationItem("Home", R.drawable.home_logo);

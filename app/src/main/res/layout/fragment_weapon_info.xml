@@ -1,14 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".WeaponInfoFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
+        android:id="@+id/noticesScrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FBECD5">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:layout_width="87dp"
+                    android:layout_height="86dp"
+                    android:src="@drawable/panyan"/>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/strokeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Name : Rock knot green"
+                    android:padding="5dp"/>
+
+                <TextView
+                    style="@style/strokeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Weapon Type: One Handed Sword"
+                    android:padding="5dp"/>
+
+                <TextView
+                    style="@style/strokeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="star rating:"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"/>
+            </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/CharacterInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Equipment description"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="25sp"
+                android:background="#D4C0AD"/>
+
+            <TextView
+                style="@style/UserNames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Stainless Heart of Protecting the Nation"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:background="#FBECD5"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="· Health boost (20%/25%/30%/35%/40%). In addition, based on the upper limit of the character's HP (1.2%/1.5%/1.8%/2.1%/2.4%), the attack power bonus is obtained."
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:background="#FBECD5"/>
+            <TextView
+                style="@style/UserNames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The ceremonial sword is carefully carved from pure emerald jade, and there seems to be a sigh in the wind of the sword when it is swung"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:background="#FBECD5"/>
+
+            <TextView
+                style="@style/CharacterInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Related stories"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="25sp"
+                android:background="#D4C0AD"/>
+
+            <TextView
+                style="@style/UserNames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="It is said that when Li Yue was in full bloom, the emperor once walked across the land holding a sword cut from emerald jade. Under the continuous sharpening of the years, the bloodbathed emerald green sword is still shining as new, the blood is gone with the millennium rain, but the condensed thoughts and resentments are hard to wash away."
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:background="#FBECD5"/>
+            <TextView
+                style="@style/UserNames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jielu has the soul and tenderness of clear water, and can cleanse the grievances left on it. However, who can heal the pain of being molded into a killing tool with a body of beautiful jade?"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:background="#FBECD5"/>
+            <TextView
+                style="@style/UserNames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The old friend who has forgotten his name once complained and sighed like this, but the irresistible fate finally drowned out the words of compassion. In too long a time, enemies who fought bloody battles to the death also talked and had fun together, and friends who will turn against each other and enemies who have lost their hatred will also meet and have a toast. This sword was also carved at that time as an expensive gift to someone. The emerald jade named Jielu was cut and chiseled for peace and luxury. When the wine vessel was overflowing with blood, the warmth was torn apart by the cruel desire, and turned into dust, the gift that could not be given, the friendship that could not be told, also became a sharp knife to kill old friends."
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:background="#FBECD5"/>
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

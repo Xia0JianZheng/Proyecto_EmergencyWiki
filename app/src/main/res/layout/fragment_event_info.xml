@@ -1,14 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".EventInfoFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
+        android:id="@+id/eventScrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
 
-</FrameLayout>
+        <LinearLayout
+            android:id="@+id/notice1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/traveler"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/UserNames"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Genshin Impact" />
+
+                    <TextView
+                        style="@style/PubDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:text="11 - 11" />
+
+                    <TextView
+                        style="@style/follow_button"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="+ Follow" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                style="@style/UserNames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[Prize Event]「Prince」 Dadalia's avatar collection is open! "
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/postImage1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/eventimage1" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello travelers! This is the Tivat hiking group (*/ω＼*)\n\n The new avatar collection event is open! The protagonist this time is the eleventh executive officer of the Fools -「Prince」Dadalia.\n\nThe hiking group has prepared the surrounding gift bags and rough stones, so pick up the paintbrush in your hand and draw a head portrait for Dadalia~"
+                android:textSize="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"/>
+            <ImageView
+                android:id="@+id/postImage2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/eventimage2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="November 10, 2022 - November 23, 2022 23:59\n\nDraw time: November 30, 2022, update the list of winners in this activity post"
+                android:textSize="10dp"
+                android:layout_marginLeft="15dp"
+                />
+            <ImageView
+                android:id="@+id/postImage3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/eventimage3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="During the event, if you post a fan avatar that meets the requirements in the #dadalia# topic, you will be deemed to have successfully participated in the event.\n\n★post format\n\nTitle: 「Dadalia」 profile picture + title of work\n\nBody: UID: XXXXXXX\n\nWork picture-+"
+                android:textSize="10dp"
+                android:layout_marginLeft="15dp"
+                />
+            <ImageView
+                android:id="@+id/postImage4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/eventimage4" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Creation gift pack (5 people)\n\nOriginal Stone*1500+Creation Coin*7000+Tivat Zoo Theme Series Plush Dumpling Set (7pcs)*1\n\nPopular gift pack (10 people)\n\nOriginal Stone*800+Creation Coin*5000+Cyclops Plush Doll*1+Tivat Zoo Theme Series Acrylic Pendant Set (7pcs)*1+Qin Tian Yi Xia Series Memo Book Dadalia*1"
+                android:textSize="10dp"
+                android:layout_marginLeft="15dp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,29 @@
         android:id="@+id/homeFragment"
         android:name="com.example.proyecto_emergencywiki.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_postInfoFragment"
+            app:destination="@id/postInfoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_eventInfoFragment"
+            app:destination="@id/eventInfoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_charactersFragment"
+            app:destination="@id/charactersFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_weaponsFragment"
+            app:destination="@id/weaponsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_artifactsFragment"
+            app:destination="@id/artifactsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_teamUpFragment"
+            app:destination="@id/teamUpFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_userPerfilFragment"
+            app:destination="@id/userPerfilFragment" />
+    </fragment>
     <fragment
         android:id="@+id/eventInfoFragment"
         android:name="com.example.proyecto_emergencywiki.EventInfoFragment"
@@ -24,7 +46,11 @@
         android:id="@+id/charactersFragment"
         android:name="com.example.proyecto_emergencywiki.CharactersFragment"
         android:label="fragment_characters"
-        tools:layout="@layout/fragment_characters" />
+        tools:layout="@layout/fragment_characters" >
+        <action
+            android:id="@+id/action_charactersFragment_to_characterInfoFragment"
+            app:destination="@id/characterInfoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/characterInfoFragment"
         android:name="com.example.proyecto_emergencywiki.CharacterInfoFragment"
@@ -34,7 +60,11 @@
         android:id="@+id/weaponsFragment"
         android:name="com.example.proyecto_emergencywiki.WeaponsFragment"
         android:label="fragment_weapons"
-        tools:layout="@layout/fragment_weapons" />
+        tools:layout="@layout/fragment_weapons" >
+        <action
+            android:id="@+id/action_weaponsFragment_to_weaponInfoFragment"
+            app:destination="@id/weaponInfoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/weaponInfoFragment"
         android:name="com.example.proyecto_emergencywiki.WeaponInfoFragment"
@@ -44,7 +74,11 @@
         android:id="@+id/artifactsFragment"
         android:name="com.example.proyecto_emergencywiki.ArtifactsFragment"
         android:label="fragment_artifacts"
-        tools:layout="@layout/fragment_artifacts" />
+        tools:layout="@layout/fragment_artifacts" >
+        <action
+            android:id="@+id/action_artifactsFragment_to_artifactInfoFragment"
+            app:destination="@id/artifactInfoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/artifactInfoFragment"
         android:name="com.example.proyecto_emergencywiki.ArtifactInfoFragment"
@@ -54,7 +88,11 @@
         android:id="@+id/teamUpFragment"
         android:name="com.example.proyecto_emergencywiki.TeamUpFragment"
         android:label="fragment_team_up"
-        tools:layout="@layout/fragment_team_up" />
+        tools:layout="@layout/fragment_team_up" >
+        <action
+            android:id="@+id/action_teamUpFragment_to_teamChatFragment"
+            app:destination="@id/teamChatFragment" />
+    </fragment>
     <fragment
         android:id="@+id/teamChatFragment"
         android:name="com.example.proyecto_emergencywiki.TeamChatFragment"

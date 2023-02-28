@@ -1,14 +1,395 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/characerinfoScrollView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/expandable_layout"
+    app:layout_constraintVertical_bias="0.0"
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/characerinfoConstLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".CharacterInfoFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/characterInfo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/characerinfoConstLayout">
 
-</FrameLayout>
+    <LinearLayout
+        android:id="@+id/info1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="horizontal"
+        android:background="#D4C0AD">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/element" />
+
+        <TextView
+            style="@style/CharacterInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:text="Kamisato Ayaka" />
+
+    </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/shenli_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:orientation="horizontal"
+            android:background="#FBECD5">
+            <TextView
+                style="@style/characterInfo2"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:text="Birthday" />
+            <TextView
+                style="@style/characterInfo3"
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="September 28th"
+                android:textSize="10sp"
+                android:gravity="center" />
+            <TextView
+                style="@style/characterInfo2"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:text="Region" />
+            <TextView
+                style="@style/characterInfo3"
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Inazuma"
+                android:textSize="10sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:orientation="horizontal"
+            android:background="#FBECD5">
+
+            <TextView
+                style="@style/characterInfo2"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:text="Element" />
+
+            <TextView
+                style="@style/characterInfo3"
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Cyro"
+                android:textSize="10sp"
+                android:gravity="center" />
+
+            <TextView
+                style="@style/characterInfo2"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:text="Weapon Type" />
+
+            <TextView
+                style="@style/characterInfo3"
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Sword"
+                android:textSize="10sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:orientation="horizontal"
+            android:background="#FBECD5">
+
+            <TextView
+                style="@style/characterInfo2"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:text="Constellation" />
+
+            <TextView
+                style="@style/characterInfo3"
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Grus Nivis"
+                android:textSize="10sp"
+                android:gravity="center" />
+
+            <TextView
+                style="@style/characterInfo2"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:text="Affiliations" />
+
+            <TextView
+                style="@style/characterInfo3"
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Yashiro Commission"
+                android:textSize="10sp"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+            <TextView
+                style="@style/CharacterInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Talents"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="25sp"
+                android:background="#D4C0AD"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:background="#EBDAC1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/talent1" />
+                <TextView
+                    style="@style/characterInfo4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="kamisato Art : kabuki"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/characterInfo4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Normal Attack"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="5dp"
+                android:gravity="start"
+                android:textSize="10sp"
+                android:background="#FBECD5"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Performs up to 5 rapid strikes."
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:gravity="start"
+                android:textSize="10sp"
+                android:textColor="#4F2209"
+                android:background="#FBECD5"/>
+
+            <TextView
+                style="@style/characterInfo4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Charged Attack"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="5dp"
+                android:gravity="start"
+                android:textSize="10sp"
+                android:background="#FBECD5"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consumes a certain amount of Stamina to unleash a flurry of sword ki."
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:gravity="start"
+                android:textSize="10sp"
+                android:textColor="#4F2209"
+                android:background="#FBECD5"/>
+
+            <TextView
+                style="@style/characterInfo4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pluging Attack"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="5dp"
+                android:gravity="start"
+                android:textSize="10sp"
+                android:background="#FBECD5"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pluges from mid-air to strike the ground below. Damaging enemys along the path and dealing AoE DMG upon impact."
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:gravity="start"
+                android:textSize="10sp"
+                android:textColor="#4F2209"
+                android:background="#FBECD5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:background="#EBDAC1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/talent2" />
+                <TextView
+                    style="@style/characterInfo4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="kamisato Art : Hyouka"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Summon blooming ice to launch nearby opponents, dealing AoE Cyro DMG."
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="start"
+                android:textSize="10sp"
+                android:textColor="#4F2209"
+                android:background="#FBECD5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:background="#EBDAC1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/talent3" />
+                <TextView
+                    style="@style/characterInfo4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="kamisato Art : Hyouka"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Summon forth a snowstorm with flawless poise, unleashing a Flostflake Seki no To That moves foward continuosly."
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="start"
+                android:textSize="10sp"
+                android:textColor="#4F2209"
+                android:background="#FBECD5"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

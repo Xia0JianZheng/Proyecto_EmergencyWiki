@@ -1,14 +1,403 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/characerinfoScrollView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/expandable_layout"
+    app:layout_constraintVertical_bias="0.0"
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".ArtifactInfoFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/ice1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:background="#FBECD5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center|center">
+
+            <ImageView
+                android:layout_width="87dp"
+                android:layout_height="86dp"
+                android:src="@drawable/ice1"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/strokeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:gravity="start|center"
+                android:text="The flower of life: Thoughts through the snowstorm" />
+
+            <TextView
+                style="@style/strokeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:gravity="start|center"
+                android:text="Description: The flower of the glacier that has long been extinct, frosted with a little dew. The lonely warrior once bowed his waist for this flower." />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ice2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBECD5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ice1"
+        android:layout_marginTop="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center|center">
+
+            <ImageView
+                android:layout_width="87dp"
+                android:layout_height="86dp"
+                android:src="@drawable/ice2"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/strokeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:gravity="start|center"
+                android:text="Death Feather: A Desire to Break Ice" />
+
+            <TextView
+                style="@style/strokeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:gravity="start|center"
+                android:text="Description: The bird feathers spread out in the cold winter, as if you can feel the wind of the wings of the raptors soaring above the snowfields and ice peaks." />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ice3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBECD5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ice2"
+        android:layout_marginTop="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center|center">
+
+            <ImageView
+                android:layout_width="87dp"
+                android:layout_height="86dp"
+                android:src="@drawable/ice3"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/strokeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:gravity="start|center"
+                android:text="The Sands of Time: The End of Frozen Home" />
+
+            <TextView
+                style="@style/strokeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:gravity="start|center"
+                android:text="Description: A timepiece used by the people of their homeland waiting for the return of their warriors. What flows in it is not sand, but unmelted ice chips." />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ice4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBECD5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ice3"
+        android:layout_marginTop="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center|center">
+
+            <ImageView
+                android:layout_width="87dp"
+                android:layout_height="86dp"
+                android:src="@drawable/ice5"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/strokeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:gravity="start|center"
+                android:text="The Empty Cup: Frosty Pride" />
+
+            <TextView
+                style="@style/strokeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:gravity="start|center"
+                android:text="Description: A cup lid made of ice sculptures, as hard as winter. The previous owner drank from it the ice-free wine." />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ice5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBECD5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ice4"
+        android:layout_marginTop="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center|center">
+
+            <ImageView
+                android:layout_width="87dp"
+                android:layout_height="86dp"
+                android:src="@drawable/ice4"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/strokeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:gravity="start|center"
+                android:text="Crown of Law: Echoes of Ice and Snow" />
+
+            <TextView
+                style="@style/strokeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:gravity="start|center"
+                android:text="Description: The diadem of an ancient hero who dreamed of conquering ice and snow, a testament to the courage that drove its old master to face the bitter winter." />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/recommendText"
+        app:layout_constraintTop_toBottomOf="@+id/ice5"
+        style="@style/CharacterInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recommended Characters"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:background="#D4C0AD"/>
+
+    <LinearLayout
+        android:id="@+id/recommendCharac"
+        app:layout_constraintTop_toBottomOf="@+id/recommendText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E2D9CF">
+
+        <TextView
+            style="@style/strokeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textColor="#64482F"
+            android:gravity="start|center"
+            android:text="Role Name   " />
+        <TextView
+            style="@style/strokeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:textColor="#64482F"
+
+            android:text="Description" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/charac1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBECD5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recommendCharac"
+        >
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center|center">
+
+            <ImageView
+                android:layout_width="87dp"
+                android:layout_height="86dp"
+                android:src="@drawable/kamisato_ayaka"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/strokeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:gravity="start|center"
+                android:text="The Ice Wind Lost Warrior can bring Kamisato Ayaka an ice element damage bonus and a large critical strike rate bonus. This allows Shenli Linghua to have no shortage of crit rate without stacking crit rate. The damage is stable, one of the graduation suits." />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/charac2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBECD5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/charac1">
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center|center">
+
+            <ImageView
+                android:layout_width="87dp"
+                android:layout_height="86dp"
+                android:src="@drawable/ganyu"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/strokeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:gravity="start|center"
+                android:text="The Ice Wind Lost Warrior can bring Gan Yu an ice element damage bonus and a large critical strike rate bonus. This enables Gan Yu to have no shortage of crit rate without stacking crit rate. The damage is stable, one of the graduation suits." />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
