@@ -1,6 +1,7 @@
 package com.example.proyecto_emergencywiki;
 
 import android.graphics.Color;
+
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -12,20 +13,27 @@ import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.OrientationEventListener;
+
 import android.view.View;
 import android.view.ViewGroup;
+
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
-import com.google.android.exoplayer2.SimpleExoPlayer;
+
+import java.io.File;
+
+import cn.jzvd.JZDataSource;
+import cn.jzvd.JzvdStd;
 
 
 public class TeamUpFragment extends Fragment {
 
     NavController navController;
     AHBottomNavigation bottomNavigation;
+
 
 
     @Override
@@ -54,17 +62,27 @@ public class TeamUpFragment extends Fragment {
 
         TextView draw10 = view.findViewById(R.id.draw10);
 
+        JzvdStd videoPlayer = view.findViewById(R.id.video_player);
+        String packageName = requireContext().getPackageName();
+        Uri videoUri = Uri.parse("android.resource://" + "com.example.proyecto_emergencywiki" + "/" + R.raw.draw);
+
+        JZDataSource jzDataSource = null;
+        jzDataSource = new JZDataSource(videoUri);
+        jzDataSource.title = "your title";
+        videoPlayer.setUp(jzDataSource, JzvdStd.SCREEN_FULLSCREEN);
+
 
 
         draw10.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-
+                videoPlayer.setVisibility(View.VISIBLE);
+                videoPlayer.startVideo();
             }
 
-
-
         });
+
 
 
         OrientationEventListener orientationEventListener = new OrientationEventListener(this.getContext()) {

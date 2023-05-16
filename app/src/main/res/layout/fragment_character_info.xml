@@ -51,10 +51,12 @@
     </LinearLayout>
 
         <ImageView
+            android:id="@+id/shenli_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:src="@drawable/shenli_1" />
+            android:src="@drawable/shenli_1"
+            android:clickable="true"/>
 
     <LinearLayout
         android:layout_width="match_parent"
