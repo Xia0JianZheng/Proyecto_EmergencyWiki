@@ -54,170 +54,165 @@
             android:id="@+id/shenli_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
+
             android:src="@drawable/shenli_1"
             android:clickable="true"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:orientation="vertical">
-
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="11dp"
-            android:orientation="horizontal"
-            android:background="#FBECD5">
-            <TextView
-                style="@style/characterInfo2"
-                android:layout_width="50dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_gravity="center"
-                android:text="Birthday" />
-            <TextView
-                style="@style/characterInfo3"
-                android:layout_width="110dp"
-                android:layout_height="25dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="September 28th"
-                android:textSize="10sp"
-                android:gravity="center" />
-            <TextView
-                style="@style/characterInfo2"
-                android:layout_width="50dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_gravity="center"
-                android:text="Region" />
-            <TextView
-                style="@style/characterInfo3"
-                android:layout_width="110dp"
-                android:layout_height="25dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Inazuma"
-                android:textSize="10sp"
-                android:gravity="center" />
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FBECD5"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/characterInfo2"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Birthday" />
+
+                <TextView
+                    style="@style/characterInfo3"
+                    android:layout_width="110dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="September 28th"
+                    android:textSize="10sp" />
+
+                <TextView
+                    style="@style/characterInfo2"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Region" />
+
+                <TextView
+                    style="@style/characterInfo3"
+                    android:layout_width="110dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Inazuma"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FBECD5"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/characterInfo2"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Element" />
+
+                <TextView
+                    style="@style/characterInfo3"
+                    android:layout_width="110dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Cyro"
+                    android:textSize="10sp" />
+
+                <TextView
+                    style="@style/characterInfo2"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Weapon Type" />
+
+                <TextView
+                    style="@style/characterInfo3"
+                    android:layout_width="110dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Sword"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FBECD5"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/characterInfo2"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Constellation" />
+
+                <TextView
+                    style="@style/characterInfo3"
+                    android:layout_width="110dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Grus Nivis"
+                    android:textSize="10sp" />
+
+                <TextView
+                    style="@style/characterInfo2"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Affiliations" />
+
+                <TextView
+                    style="@style/characterInfo3"
+                    android:layout_width="110dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Yashiro Commission"
+                    android:textSize="10sp" />
+            </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="11dp"
-            android:orientation="horizontal"
-            android:background="#FBECD5">
-
-            <TextView
-                style="@style/characterInfo2"
-                android:layout_width="50dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_gravity="center"
-                android:text="Element" />
-
-            <TextView
-                style="@style/characterInfo3"
-                android:layout_width="110dp"
-                android:layout_height="25dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Cyro"
-                android:textSize="10sp"
-                android:gravity="center" />
-
-            <TextView
-                style="@style/characterInfo2"
-                android:layout_width="50dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_gravity="center"
-                android:text="Weapon Type" />
-
-            <TextView
-                style="@style/characterInfo3"
-                android:layout_width="110dp"
-                android:layout_height="25dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Sword"
-                android:textSize="10sp"
-                android:gravity="center" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="11dp"
-            android:orientation="horizontal"
-            android:background="#FBECD5">
-
-            <TextView
-                style="@style/characterInfo2"
-                android:layout_width="50dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_gravity="center"
-                android:text="Constellation" />
-
-            <TextView
-                style="@style/characterInfo3"
-                android:layout_width="110dp"
-                android:layout_height="25dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Grus Nivis"
-                android:textSize="10sp"
-                android:gravity="center" />
-
-            <TextView
-                style="@style/characterInfo2"
-                android:layout_width="50dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_gravity="center"
-                android:text="Affiliations" />
-
-            <TextView
-                style="@style/characterInfo3"
-                android:layout_width="110dp"
-                android:layout_height="25dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Yashiro Commission"
-                android:textSize="10sp"
-                android:gravity="center" />
-        </LinearLayout>
-    </LinearLayout>
-
-            <TextView
+        <TextView
                 style="@style/CharacterInfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
